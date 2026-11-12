@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wspólny wyjazd na narty - Wybór oferty</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* Jasny, chłodny szary */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Header / Hero Section -->
+    <header class="relative bg-gradient-to-br from-blue-900 via-blue-700 to-sky-500 text-white py-20 px-6 overflow-hidden shadow-xl rounded-b-[2rem] md:rounded-b-[4rem] mb-12">
+        <!-- Decorative snowflakes/circles -->
+        <div class="absolute top-10 left-10 w-24 h-24 bg-white opacity-10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-10 right-20 w-40 h-40 bg-white opacity-10 rounded-full blur-3xl"></div>
+        
+        <div class="relative max-w-5xl mx-auto text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm text-sm font-medium tracking-wider mb-4 border border-white/30 uppercase">
+                Zima 2027
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+                Wyjazd na Narty 2027 - Zestawienie Ofert ⛷️
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto font-light">
+                Hejo! Zrobiłem krótki research i wybrałem trzy najciekawsze opcje na nasz tegoroczny wyjazd. 
+                Przejrzyjcie oferty poniżej, przeczytajcie moje uwagi i zagłosujcie na dole strony, żebyśmy mogli zbliżyć się do wyboru konkretnej oferty!
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        
+        <!-- Section: Offers -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-3">Analiza Ofert</h2>
+                <p class="text-slate-500">Oto pierwsza z propozycji na nasz wyjazd.</p>
+            </div>
+
+            <!-- Single Large Offer Card: Les 2 Alpes -->
+            <article class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden flex flex-col mb-10">
+                <!-- Header / Visual -->
+                <div class="h-64 bg-slate-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-900 via-blue-800 to-sky-400 opacity-90"></div>
+                    <div class="absolute inset-0 flex items-center justify-end pr-10 opacity-20 text-9xl">🏔️</div>
+                    <div class="absolute bottom-8 left-8 text-white z-10">
+                        <h3 class="text-4xl font-extrabold mb-2 drop-shadow-md">Les 2 Alpes, Francja</h3>
+                        <p class="text-blue-100 font-medium text-xl flex items-center bg-black/20 w-max px-4 py-1.5 rounded-lg backdrop-blur-sm">
+                            <span class="mr-2 text-2xl">📅</span> 13.03 - 20.03.2027
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Body -->
+                <div class="p-8 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Column: Info (Slopes & Accommodation) -->
+                    <div class="space-y-10">
+                        <!-- Accommodation -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>🏨</span> Nocleg: Rezydencja Le Hameau 4*
+                            </h4>
+                            <p class="text-slate-600 mb-4 leading-relaxed text-lg">
+                                Wybudowana w 2022 roku, położona w spokojnej części kurortu. Znajduje się <strong>zaraz obok wyciągu Vallee Blanche</strong>. 
+                                W cenie pobytu mamy dostęp do basenu, jacuzzi oraz fitness roomu.
+                            </p>
+                            <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-800 font-bold px-5 py-3 rounded-xl shadow-sm">
+                                <span>Moja ocena hotelu:</span>
+                                <span class="text-xl bg-blue-600 text-white px-3 py-1 rounded-lg">7/10</span>
+                            </div>
+                        </div>
+
+                        <!-- Slopes -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>⛷️</span> Trasy (łącznie: 220 km)
+                            </h4>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-blue-50 border border-blue-100 px-2 py-4 rounded-xl text-center">
+                                    <span class="block text-blue-700 font-black text-2xl mb-1">143 km</span>
+                                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wide">Łatwe</span>
+                                </div>
+                                <div class="bg-red-50 border border-red-100 px-2 py-4 rounded-xl text-center">
+                                    <span class="block text-red-700 font-black text-2xl mb-1">39 km</span>
+                                    <span class="text-xs font-bold text-red-600 uppercase tracking-wide">Średnie</span>
+                                </div>
+                                <div class="bg-slate-800 border border-slate-900 px-2 py-4 rounded-xl text-center">
+                                    <span class="block text-white font-black text-2xl mb-1">38 km</span>
+                                    <span class="text-xs font-bold text-slate-300 uppercase tracking-wide">Trudne</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Pricing & Transport -->
+                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                            <span>💰</span> Ceny i Transport
+                        </h4>
+                        
+                        <div class="space-y-4">
+                            <!-- Option 1 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            🚌 Autokar
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Doliczony jest koszt biletu do Wrocławia pociągiem
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">3 889 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wyjazd w piątek wieczorem, powrót w niedzielę rano.
+                                </div>
+                            </div>
+
+                            <!-- Option 2 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            ✈️ Samolot
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Bagaż trzeba dostarczyć do Wrocławia, Warszawy (lub Łodzi)
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">4 569 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wylot w sobotę do Genewy i powrót w niedzielę (prawdopodobnie do Gdańska).
+                                </div>
+                            </div>
+
+                            <!-- Option 3 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            ✈️ Samolot (Premium)
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1">
+                                            Bagaże zabierają bezpośrednio z domu!
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">4 969 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wylot w sobotę do Genewy i powrót w niedzielę (prawdopodobnie do Gdańska).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="bg-white p-6 border-t border-slate-100 flex justify-center">
+                    <a href="https://www.snowee.pl/wyjazdy/les-2-alpes-13032027/#resort" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-blue-600 rounded-xl overflow-hidden shadow-lg shadow-blue-500/30 transition-all hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        <span class="mr-2 text-xl">🔗</span> Przejdź do pełnej oferty na Snowee
+                    </a>
+                </div>
+            </article>
+
+            <!-- Single Large Offer Card: Les Arcs -->
+            <article class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden flex flex-col mb-10">
+                <!-- Header / Visual -->
+                <div class="h-64 bg-slate-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-900 via-blue-800 to-indigo-500 opacity-90"></div>
+                    <div class="absolute inset-0 flex items-center justify-end pr-10 opacity-20 text-9xl">🏔️</div>
+                    <div class="absolute bottom-8 left-8 text-white z-10">
+                        <h3 class="text-4xl font-extrabold mb-2 drop-shadow-md">Les Arcs (Paradiski), Francja</h3>
+                        <p class="text-blue-100 font-medium text-xl flex items-center bg-black/20 w-max px-4 py-1.5 rounded-lg backdrop-blur-sm">
+                            <span class="mr-2 text-2xl">📅</span> 06.03 - 13.03.2027
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Body -->
+                <div class="p-8 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Column: Info (Slopes & Accommodation) -->
+                    <div class="space-y-10">
+                        <!-- Accommodation -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>🏨</span> Nocleg: Rezydencja L’Arollaie 4*
+                            </h4>
+                            <p class="text-slate-600 mb-4 leading-relaxed text-lg">
+                                Położona w Plan Peisey – jednej z najlepiej skomunikowanych części Paradiski, <strong>tuż przy Vanoise Express</strong> łączącym La Plagne i Les Arcs. 
+                                Komfortowe apartamenty w alpejskim stylu. Kryty basen (bezpłatny) oraz strefa wellness (1 wejście do sauny w cenie) zapewniają idealne warunki po nartach.
+                            </p>
+                            <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-800 font-bold px-5 py-3 rounded-xl shadow-sm">
+                                <span>Moja ocena hotelu:</span>
+                                <span class="text-xl bg-orange-500 text-white px-3 py-1 rounded-lg">6/10</span>
+                            </div>
+                        </div>
+
+                        <!-- Slopes -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>⛷️</span> Trasy: 200 km (całość 425 km)
+                            </h4>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-blue-50 border border-blue-100 px-2 py-4 rounded-xl text-center">
+                                    <span class="block text-blue-700 font-black text-2xl mb-1">104 <span class="text-sm font-normal text-blue-500">(243)</span></span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wide">Łatwe km</span>
+                                </div>
+                                <div class="bg-red-50 border border-red-100 px-2 py-4 rounded-xl text-center">
+                                    <span class="block text-red-700 font-black text-2xl mb-1">70 <span class="text-sm font-normal text-red-400">(129)</span></span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-red-600 uppercase tracking-wide">Średnie km</span>
+                                </div>
+                                <div class="bg-slate-800 border border-slate-900 px-2 py-4 rounded-xl text-center">
+                                    <span class="block text-white font-black text-2xl mb-1">26 <span class="text-sm font-normal text-slate-400">(53)</span></span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-slate-300 uppercase tracking-wide">Trudne km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Pricing & Transport -->
+                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                            <span>💰</span> Ceny i Transport
+                        </h4>
+                        
+                        <div class="space-y-4">
+                            <!-- Option 1 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            🚌 Autokar
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Doliczony jest koszt biletu do Wrocławia pociągiem
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">4 189 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wyjazd w piątek wieczorem, powrót w niedzielę rano.
+                                </div>
+                            </div>
+
+                            <!-- Option 2 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            ✈️ Samolot
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Bagaż trzeba dostarczyć do Wrocławia, Warszawy (lub Łodzi)
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">4 189 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wylot w sobotę do Genewy i powrót w niedzielę (prawdopodobnie do Gdańska).
+                                </div>
+                            </div>
+
+                            <!-- Option 3 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            ✈️ Samolot (Premium)
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1">
+                                            Bagaże zabierają bezpośrednio z domu!
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">5 269 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wylot w sobotę do Genewy i powrót w niedzielę (prawdopodobnie do Gdańska).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="bg-white p-6 border-t border-slate-100 flex justify-center">
+                    <a href="https://www.snowee.pl/wyjazdy/les-arcs-06032027/#info" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-blue-600 rounded-xl overflow-hidden shadow-lg shadow-blue-500/30 transition-all hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        <span class="mr-2 text-xl">🔗</span> Przejdź do pełnej oferty na Snowee
+                    </a>
+                </div>
+            </article>
+
+            <!-- Single Large Offer Card: La Plagne -->
+            <article class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden flex flex-col mb-10">
+                <!-- Header / Visual -->
+                <div class="h-64 bg-slate-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-900 via-indigo-800 to-blue-500 opacity-90"></div>
+                    <div class="absolute inset-0 flex items-center justify-end pr-10 opacity-20 text-9xl">🏔️</div>
+                    <div class="absolute bottom-8 left-8 text-white z-10">
+                        <h3 class="text-4xl font-extrabold mb-2 drop-shadow-md">La Plagne Paradiski, Francja</h3>
+                        <p class="text-blue-100 font-medium text-xl flex items-center bg-black/20 w-max px-4 py-1.5 rounded-lg backdrop-blur-sm">
+                            <span class="mr-2 text-2xl">📅</span> 12.03 - 21.03.2027
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Body -->
+                <div class="p-8 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Column: Info (Slopes & Accommodation) -->
+                    <div class="space-y-10">
+                        <!-- Accommodation -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>🏨</span> Nocleg: Rezydencja Le Snoroc 4*
+                            </h4>
+                            <p class="text-slate-600 mb-4 leading-relaxed text-lg">
+                                Położona w malowniczej miejscowości Montalbert, tuż przy nowoczesnej gondoli. Oddana w 2022 roku, w <strong>100% ski-in, ski-out</strong>. Przestronne apartamenty z fenomenalnym widokiem oraz genialne centrum wellness w cenie: basen, jacuzzi, sauny i łaźnia parowa.
+                            </p>
+                            <div class="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-800 font-bold px-5 py-3 rounded-xl shadow-sm">
+                                <span>Moja ocena hotelu:</span>
+                                <span class="text-xl bg-green-600 text-white px-3 py-1 rounded-lg">9/10</span>
+                            </div>
+                        </div>
+
+                        <!-- Slopes -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>⛷️</span> Trasy: 225 km (całość 425 km)
+                            </h4>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-blue-50 border border-blue-100 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-blue-700 font-black text-xl md:text-2xl mb-1">60% <span class="block md:inline text-sm font-normal text-blue-500">(243 km)</span></span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wide mt-auto">Łatwe</span>
+                                </div>
+                                <div class="bg-red-50 border border-red-100 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-red-700 font-black text-xl md:text-2xl mb-1">27% <span class="block md:inline text-sm font-normal text-red-400">(129 km)</span></span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-red-600 uppercase tracking-wide mt-auto">Średnie</span>
+                                </div>
+                                <div class="bg-slate-800 border border-slate-900 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-white font-black text-xl md:text-2xl mb-1">13% <span class="block md:inline text-sm font-normal text-slate-400">(53 km)</span></span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-slate-300 uppercase tracking-wide mt-auto">Trudne</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Pricing & Transport -->
+                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                            <span>💰</span> Ceny i Transport
+                        </h4>
+                        
+                        <div class="space-y-4">
+                            <!-- Option 1 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            🚌 Autokar
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Doliczony jest koszt biletu do Wrocławia pociągiem
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">4 070 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wyjazd w piątek wieczorem, powrót w niedzielę rano.
+                                </div>
+                            </div>
+
+                            <!-- Option 2 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            ✈️ Samolot
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Bagaż trzeba dostarczyć do Wrocławia, Warszawy (lub Łodzi)
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">4 790 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wylot w sobotę do Genewy i powrót w niedzielę (prawdopodobnie do Gdańska).
+                                </div>
+                            </div>
+
+                            <!-- Option 3 (Unavailable) -->
+                            <div class="bg-slate-100 border-2 border-slate-200 rounded-2xl p-5 opacity-60">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-500 flex items-center gap-2 line-through">
+                                            ✈️ Samolot (Premium)
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-400 mt-1 line-through">
+                                            Bagaże zabierają bezpośrednio z domu!
+                                        </span>
+                                    </div>
+                                    <span class="text-2xl font-black text-slate-400 mt-2 sm:mt-0 uppercase tracking-widest">Brak</span>
+                                </div>
+                                <div class="text-sm text-slate-500 bg-slate-200/50 p-3 rounded-lg border border-slate-200">
+                                    <span class="font-semibold text-slate-600">Info:</span> Ta opcja transportu nie jest dostępna dla tego wyjazdu.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="bg-white p-6 border-t border-slate-100 flex justify-center">
+                    <a href="https://www.taksidi.pl/wyjazdy/wyjazd-na-narty-francja-La-Plagne-12-marca-2027?transportOption=163&accommodationOption=single" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-blue-600 rounded-xl overflow-hidden shadow-lg shadow-blue-500/30 transition-all hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        <span class="mr-2 text-xl">🔗</span> Przejdź do pełnej oferty na Taksidi
+                    </a>
+                </div>
+            </article>
+
+            <!-- Single Large Offer Card: Val Thorens -->
+            <article class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden flex flex-col mb-10">
+                <!-- Header / Visual -->
+                <div class="h-64 bg-slate-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-slate-900 via-gray-700 to-slate-400 opacity-90"></div>
+                    <div class="absolute inset-0 flex items-center justify-end pr-10 opacity-20 text-9xl">🏔️</div>
+                    <div class="absolute bottom-8 left-8 text-white z-10">
+                        <h3 class="text-4xl font-extrabold mb-2 drop-shadow-md">Val Thorens Orelle, Francja</h3>
+                        <p class="text-blue-100 font-medium text-xl flex items-center bg-black/20 w-max px-4 py-1.5 rounded-lg backdrop-blur-sm">
+                            <span class="mr-2 text-2xl">📅</span> 12.03 - 21.03.2027
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Body -->
+                <div class="p-8 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Column: Info (Slopes & Accommodation) -->
+                    <div class="space-y-10">
+                        <!-- Accommodation -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>🏨</span> Nocleg: Apartamenty COMFORT
+                            </h4>
+                            <p class="text-slate-600 mb-4 leading-relaxed text-lg">
+                                Przestronne i nowocześnie umeblowane apartamenty rozlokowane po kilku budynkach na terenie rezydencji. Na terenie kompleksu znajduje się basen ze SPA, salka warsztatowa, sklep i restauracja.
+                            </p>
+                            
+                            <!-- Important Notice -->
+                            <div class="mt-4 mb-4 p-4 bg-yellow-50 border-l-4 border-yellow-500 text-yellow-800 rounded-r-xl shadow-sm">
+                                <p class="font-bold flex items-center gap-2 mb-1">
+                                    <span class="text-xl">⚠️</span> Bardzo istotne:
+                                </p>
+                                <p class="text-sm">Hotel <strong>nie jest przy stoku ani wyciągu</strong>. Trzeba podjechać 400m dedykowanym skibusem do gondoli. Basen/wellness znajduje się tylko w jednym z budynków. Hotel ma w sieci mieszane opinie.</p>
+                            </div>
+
+                            <div class="inline-flex items-center gap-2 bg-yellow-50 border border-yellow-200 text-yellow-800 font-bold px-5 py-3 rounded-xl shadow-sm">
+                                <span>Moja ocena hotelu:</span>
+                                <span class="text-xl bg-yellow-500 text-white px-3 py-1 rounded-lg">6.5/10</span>
+                            </div>
+                        </div>
+
+                        <!-- Slopes -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-2 flex items-center gap-3">
+                                <span>⛷️</span> Trasy w Val Thorens-Orelle
+                            </h4>
+                            <p class="text-slate-500 font-medium mb-4 text-sm">Gwarancja śniegu! Jeździmy na wysokościach od 2 300 do 3 200 m n.p.m.</p>
+                            
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-blue-50 border border-blue-100 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-blue-700 font-black text-xl md:text-2xl mb-1">53%</span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wide mt-auto">Łatwe</span>
+                                </div>
+                                <div class="bg-red-50 border border-red-100 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-red-700 font-black text-xl md:text-2xl mb-1">36%</span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-red-600 uppercase tracking-wide mt-auto">Średnie</span>
+                                </div>
+                                <div class="bg-slate-800 border border-slate-900 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-white font-black text-xl md:text-2xl mb-1">11%</span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-slate-300 uppercase tracking-wide mt-auto">Trudne</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Pricing & Transport -->
+                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                            <span>💰</span> Ceny i Transport
+                        </h4>
+                        
+                        <div class="space-y-4">
+                            <!-- Option 1 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            🚌 Autokar
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Doliczony jest koszt biletu do Wrocławia pociągiem
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">3 390 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wyjazd w piątek wieczorem, powrót w niedzielę rano.
+                                </div>
+                            </div>
+
+                            <!-- Option 2 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+                                <div class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Hit cenowy</div>
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3 pt-2">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            ✈️ Samolot
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Bagaż trzeba dostarczyć do Wrocławia, Warszawy (lub Łodzi)
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">3 810 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-green-50/50 p-3 rounded-lg border border-green-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wylot w sobotę do Turynu i powrót w niedzielę (prawdopodobnie do Gdańska). <br>
+                                    <span class="text-green-700 font-medium block mt-1">Zdecydowanie tę świetną cenę robi lot, bo jest możliwość transferu prosto z Turynu!</span>
+                                </div>
+                            </div>
+
+                            <!-- Option 3 (Unavailable) -->
+                            <div class="bg-slate-100 border-2 border-slate-200 rounded-2xl p-5 opacity-60">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-500 flex items-center gap-2 line-through">
+                                            ✈️ Samolot (Premium)
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-400 mt-1 line-through">
+                                            Bagaże zabierają bezpośrednio z domu!
+                                        </span>
+                                    </div>
+                                    <span class="text-2xl font-black text-slate-400 mt-2 sm:mt-0 uppercase tracking-widest">Brak</span>
+                                </div>
+                                <div class="text-sm text-slate-500 bg-slate-200/50 p-3 rounded-lg border border-slate-200">
+                                    <span class="font-semibold text-slate-600">Info:</span> Ta opcja transportu nie jest dostępna dla tego wyjazdu.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="bg-white p-6 border-t border-slate-100 flex justify-center">
+                    <a href="https://www.taksidi.pl/wyjazdy/wyjazd-na-narty-francja-orelle-12-marca-2027?transportOption=170&accommodationOption=single" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-blue-600 rounded-xl overflow-hidden shadow-lg shadow-blue-500/30 transition-all hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        <span class="mr-2 text-xl">🔗</span> Przejdź do pełnej oferty na Taksidi
+                    </a>
+                </div>
+            </article>
+
+            <!-- Single Large Offer Card: Les 2 Alpes (Taksidi) -->
+            <article class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden flex flex-col mb-10">
+                <!-- Header / Visual -->
+                <div class="h-64 bg-slate-800 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-800 via-blue-700 to-indigo-400 opacity-90"></div>
+                    <div class="absolute inset-0 flex items-center justify-end pr-10 opacity-20 text-9xl">🏔️</div>
+                    <div class="absolute bottom-8 left-8 text-white z-10">
+                        <h3 class="text-4xl font-extrabold mb-2 drop-shadow-md">Les 2 Alpes (Taksidi), Francja</h3>
+                        <p class="text-blue-100 font-medium text-xl flex items-center bg-black/20 w-max px-4 py-1.5 rounded-lg backdrop-blur-sm">
+                            <span class="mr-2 text-2xl">📅</span> 12.03 - 21.03.2027
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Body -->
+                <div class="p-8 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Column: Info (Slopes & Accommodation) -->
+                    <div class="space-y-10">
+                        <!-- Accommodation -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
+                                <span>🏨</span> Nocleg: Starsza rezydencja 4*
+                            </h4>
+                            <p class="text-slate-600 mb-4 leading-relaxed text-lg">
+                                Komfortowa, aczkolwiek mająca już swoje lata rezydencja o oficjalnym standardzie 4* (my dajemy max 3*). Ma za to <strong>super lokalizację – tuż przy wyciągach (ski-in/ski-out)</strong>. Do dyspozycji: podgrzewany basen wewnętrzny, sauna, jacuzzi, darmowa siłownia oraz lounge z kominkiem (hammam płatny).
+                            </p>
+                            <div class="inline-flex items-center gap-2 bg-yellow-50 border border-yellow-200 text-yellow-800 font-bold px-5 py-3 rounded-xl shadow-sm">
+                                <span>Moja ocena hotelu:</span>
+                                <span class="text-xl bg-yellow-500 text-white px-3 py-1 rounded-lg">6.5/10</span>
+                            </div>
+                        </div>
+
+                        <!-- Slopes -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-800 mb-2 flex items-center gap-3">
+                                <span>⛷️</span> Trasy: 220 km (1280 - 3568 m n.p.m.)
+                            </h4>
+                            <p class="text-slate-500 font-medium mb-4 text-sm">Gwarancja świetnych warunków dzięki lodowcowi.</p>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-blue-50 border border-blue-100 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-blue-700 font-black text-xl md:text-2xl mb-1">65%</span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-blue-600 uppercase tracking-wide mt-auto">Łatwe</span>
+                                </div>
+                                <div class="bg-red-50 border border-red-100 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-red-700 font-black text-xl md:text-2xl mb-1">18%</span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-red-600 uppercase tracking-wide mt-auto">Średnie</span>
+                                </div>
+                                <div class="bg-slate-800 border border-slate-900 px-2 py-4 rounded-xl text-center flex flex-col justify-center">
+                                    <span class="block text-white font-black text-xl md:text-2xl mb-1">17%</span>
+                                    <span class="text-[10px] sm:text-xs font-bold text-slate-300 uppercase tracking-wide mt-auto">Trudne</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Pricing & Transport -->
+                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                            <span>💰</span> Ceny i Transport
+                        </h4>
+                        
+                        <div class="space-y-4">
+                            <!-- Option 1 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            🚌 Autokar
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Doliczony jest koszt biletu do Wrocławia pociągiem
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">3 520 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wyjazd w piątek wieczorem, powrót w niedzielę rano.
+                                </div>
+                            </div>
+
+                            <!-- Option 2 -->
+                            <div class="bg-white border-2 border-transparent hover:border-blue-400 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                            ✈️ Samolot
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-500 mt-1 max-w-[200px]">
+                                            Bagaż trzeba dostarczyć do Wrocławia, Warszawy (lub Łodzi)
+                                        </span>
+                                    </div>
+                                    <span class="text-3xl font-black text-blue-600 mt-2 sm:mt-0">4 240 zł</span>
+                                </div>
+                                <div class="text-sm text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                    <span class="font-semibold text-slate-700">Ważne:</span> Wylot w sobotę do Lyonu i powrót w niedzielę (prawdopodobnie do Gdańska).
+                                </div>
+                            </div>
+
+                            <!-- Option 3 (Unavailable) -->
+                            <div class="bg-slate-100 border-2 border-slate-200 rounded-2xl p-5 opacity-60">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-start mb-3">
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-lg text-slate-500 flex items-center gap-2 line-through">
+                                            ✈️ Samolot (Premium)
+                                        </span>
+                                        <span class="text-xs font-medium text-slate-400 mt-1 line-through">
+                                            Bagaże zabierają bezpośrednio z domu!
+                                        </span>
+                                    </div>
+                                    <span class="text-2xl font-black text-slate-400 mt-2 sm:mt-0 uppercase tracking-widest">Brak</span>
+                                </div>
+                                <div class="text-sm text-slate-500 bg-slate-200/50 p-3 rounded-lg border border-slate-200">
+                                    <span class="font-semibold text-slate-600">Info:</span> Ta opcja transportu nie jest dostępna dla tego wyjazdu.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="bg-white p-6 border-t border-slate-100 flex justify-center">
+                    <a href="https://www.taksidi.pl/wyjazdy/wyjazd-na-narty-francja-les-deux-alpes-12-marca-2027?transportOption=162&accommodationOption=single" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-blue-600 rounded-xl overflow-hidden shadow-lg shadow-blue-500/30 transition-all hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        <span class="mr-2 text-xl">🔗</span> Przejdź do pełnej oferty na Taksidi
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Section: Voting Form -->
+        <section class="max-w-3xl mx-auto mb-10" id="ankieta">
+            <div class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+                <!-- Form Header -->
+                <div class="bg-slate-800 p-8 text-white relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-sky-500 opacity-90"></div>
+                    <div class="relative z-10 text-center">
+                        <span class="text-4xl block mb-3">📝</span>
+                        <h2 class="text-3xl font-extrabold mb-2">Czas na głosowanie!</h2>
+                        <p class="text-blue-100 text-sm md:text-base">Wybierz swojego faworyta, daj znać jak chcesz jechać, a wyniki od razu zlecą na mojego maila.</p>
+                    </div>
+                </div>
+                
+                <!-- Form Body -->
+                <div class="p-8 md:p-10">
+                    <form action="https://formspree.io/f/mqpqabyj" method="POST" class="space-y-8">
+                        
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-slate-700 mb-2">Imię / Ksywka <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="Imię" required placeholder="Wpisz jak się zwiesz..." 
+                                class="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-slate-700 font-medium">
+                        </div>
+
+                        <!-- Offer Selection -->
+                        <div>
+                            <label for="offer" class="block text-sm font-bold text-slate-700 mb-2">Wybór oferty <span class="text-red-500">*</span></label>
+                            <div class="relative">
+                                <select id="offer" name="Oferta" required 
+                                    class="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all appearance-none cursor-pointer text-slate-700 font-medium">
+                                    <option value="" disabled selected>-- Wybierz z listy poniżej --</option>
+                                    <option value="Snowee - Les 2 Alpes">Snowee - Les 2 Alpes</option>
+                                    <option value="Snowee - Les Arcs">Snowee - Les Arcs (Paradiski)</option>
+                                    <option value="Taksidi - La Plagne Paradiski">Taksidi - La Plagne Paradiski</option>
+                                    <option value="Taksidi - Val Thorens Orelle">Taksidi - Val Thorens Orelle</option>
+                                    <option value="Taksidi - Les 2 Alpes">Taksidi - Les 2 Alpes</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-slate-500">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transport Preference (Tiles) -->
+                        <div>
+                            <span class="block text-sm font-bold text-slate-700 mb-3">Preferowany transport <span class="text-red-500">*</span></span>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <!-- Autokar -->
+                                <label class="relative cursor-pointer h-full">
+                                    <input type="radio" name="Transport" value="Autokar" class="peer sr-only" required>
+                                    <div class="p-4 rounded-xl bg-slate-50 border-2 border-slate-200 peer-checked:border-blue-500 peer-checked:bg-blue-50 transition-all hover:bg-slate-100 flex flex-col h-full justify-between gap-3">
+                                        <div class="flex items-start justify-between w-full">
+                                            <span class="text-2xl">🚌</span>
+                                            <div class="w-5 h-5 rounded-full border-2 border-slate-300 peer-checked:border-blue-500 peer-checked:bg-blue-500 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <span class="font-bold text-slate-700 peer-checked:text-blue-700">Autokar</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <!-- Samolot Standard -->
+                                <label class="relative cursor-pointer h-full">
+                                    <input type="radio" name="Transport" value="Samolot (bagaż do WRO/WAW/ŁDZ)" class="peer sr-only">
+                                    <div class="p-4 rounded-xl bg-slate-50 border-2 border-slate-200 peer-checked:border-blue-500 peer-checked:bg-blue-50 transition-all hover:bg-slate-100 flex flex-col h-full justify-between gap-3">
+                                        <div class="flex items-start justify-between w-full">
+                                            <span class="text-2xl">✈️</span>
+                                            <div class="w-5 h-5 rounded-full border-2 border-slate-300 peer-checked:border-blue-500 peer-checked:bg-blue-500 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <span class="font-bold text-slate-700 peer-checked:text-blue-700">Samolot</span>
+                                            <span class="text-xs font-medium text-slate-500">(bagaż do WRO/WAW/ŁDZ)</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <!-- Samolot Premium -->
+                                <label id="label-premium" class="relative cursor-pointer h-full">
+                                    <input type="radio" id="transport-premium" name="Transport" value="Samolot Premium (bagaże z domu)" class="peer sr-only">
+                                    <div id="div-premium" class="p-4 rounded-xl bg-slate-50 border-2 border-slate-200 peer-checked:border-blue-500 peer-checked:bg-blue-50 transition-all hover:bg-slate-100 flex flex-col h-full justify-between gap-3">
+                                        <div class="flex items-start justify-between w-full">
+                                            <span class="text-2xl">🛫</span>
+                                            <div class="w-5 h-5 rounded-full border-2 border-slate-300 peer-checked:border-blue-500 peer-checked:bg-blue-500 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <span class="font-bold text-slate-700 peer-checked:text-blue-700">Samolot Premium</span>
+                                            <span class="text-xs font-medium text-slate-500">(bagaże z domu)</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Notes -->
+                        <div>
+                            <label for="notes" class="block text-sm font-bold text-slate-700 mb-2">Dodatkowe uwagi / Pytania / Preferencje pokoju</label>
+                            <textarea id="notes" name="Uwagi" rows="3" placeholder="Np. z kim chcesz być w pokoju, specjalne prośby..." 
+                                class="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-y text-slate-700 font-medium"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-6 border-t border-slate-100 text-center">
+                            <button type="submit" class="w-full sm:w-auto mx-auto inline-flex items-center justify-center gap-3 px-10 py-4 font-bold text-white bg-blue-600 rounded-xl shadow-lg shadow-blue-500/30 transition-all hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                                <span class="text-lg">Wyślij swój głos!</span>
+                                <span class="text-xl">🚀</span>
+                            </button>
+                            <p class="text-center text-xs font-medium text-slate-400 mt-4">
+                                Po kliknięciu Twój wybór zostanie przesłany bezpiecznie do mojej skrzynki mailowej.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-slate-400 text-sm border-t border-slate-200">
+        <p>Stworzone na potrzeby zimowego wyjazdu 2027 🏂</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const offerSelect = document.getElementById('offer');
+            const premiumRadio = document.getElementById('transport-premium');
+            const premiumLabel = document.getElementById('label-premium');
+            const premiumDiv = document.getElementById('div-premium');
+
+            function updatePremiumAvailability() {
+                if (offerSelect.value && offerSelect.value.includes('Taksidi')) {
+                    // Wyłącz opcję
+                    premiumRadio.disabled = true;
+                    if (premiumRadio.checked) {
+                        premiumRadio.checked = false;
+                    }
+                    // Zmiana wyglądu na niedostępny
+                    premiumLabel.classList.remove('cursor-pointer');
+                    premiumLabel.classList.add('cursor-not-allowed', 'opacity-40');
+                    premiumDiv.classList.remove('hover:bg-slate-100');
+                } else {
+                    // Włącz opcję ponownie
+                    premiumRadio.disabled = false;
+                    // Przywrócenie wyglądu
+                    premiumLabel.classList.add('cursor-pointer');
+                    premiumLabel.classList.remove('cursor-not-allowed', 'opacity-40');
+                    premiumDiv.classList.add('hover:bg-slate-100');
+                }
+            }
+
+            // Nasłuchuj zmian na liście rozwijanej
+            offerSelect.addEventListener('change', updatePremiumAvailability);
+            
+            // Uruchom również raz przy załadowaniu (w razie gdyby coś było wstępnie wybrane)
+            updatePremiumAvailability();
+        });
+    </script>
+</body>
+</html>
